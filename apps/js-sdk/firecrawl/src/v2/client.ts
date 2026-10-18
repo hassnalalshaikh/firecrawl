@@ -104,8 +104,10 @@ export interface FirecrawlClientOptions {
   apiUrl?: string | null;
   /** Per-request timeout in milliseconds (optional). */
   timeoutMs?: number;
-  /** Max automatic retries for transient failures (optional). */
+  /** Total attempts for transient failures, including the first request (default 3). Use 1 for a single attempt. */
   maxRetries?: number;
+  /** Opt in to rejecting HTTP redirects. Undefined preserves the transport default. */
+  maxRedirects?: 0;
   /** Exponential backoff factor for retries (optional). */
   backoffFactor?: number;
 }
@@ -144,6 +146,7 @@ export class FirecrawlClient {
       apiUrl,
       timeoutMs: opts.timeoutMs,
       maxRetries: opts.maxRetries,
+      maxRedirects: opts.maxRedirects,
       backoffFactor: opts.backoffFactor,
     });
   }

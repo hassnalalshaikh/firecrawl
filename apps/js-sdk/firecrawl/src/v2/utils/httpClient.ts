@@ -10,6 +10,8 @@ export interface HttpClientOptions {
   apiUrl: string;
   timeoutMs?: number;
   maxRetries?: number;
+  /** Opt in to rejecting redirects. Undefined preserves the transport default. */
+  maxRedirects?: 0;
   backoffFactor?: number; // seconds factor for 0.5, 1, 2...
 }
 
@@ -23,9 +25,14 @@ export class HttpClient {
   private readonly apiKey: string;
   private readonly apiUrl: string;
   private readonly maxRetries: number;
+  private readonly maxRedirects: 0 | undefined;
   private readonly backoffFactor: number;
 
   constructor(options: HttpClientOptions) {
+    if (options.maxRedirects !== undefined && options.maxRedirects !== 0) {
+      throw new Error("maxRedirects must be 0 or undefined");
+    }
+    this.maxRedirects = options.maxRedirects;
     this.apiKey = options.apiKey;
     this.apiUrl = options.apiUrl.replace(/\/$/, "");
     this.maxRetries = options.maxRetries ?? 3;
@@ -90,6 +97,7 @@ export class HttpClient {
           delete (cfg.headers as Record<string, unknown>)["content-type"];
         }
 
+        if (this.maxRedirects === 0) cfg.maxRedirects = 0;
         const res = await this.instance.request<T>(cfg);
         if (res.status === 502 && attempt < this.maxRetries - 1) {
           await this.sleep(this.backoffFactor * Math.pow(2, attempt));

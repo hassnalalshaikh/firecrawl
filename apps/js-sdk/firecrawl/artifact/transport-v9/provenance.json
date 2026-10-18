@@ -1,0 +1,143 @@
+{
+  "schema": "reviewed-firecrawl-transport-artifact.v1",
+  "artifactRevision": "v9",
+  "package": "firecrawl",
+  "packageVersion": "4.25.1",
+  "sourceRepository": "https://github.com/hassnalalshaikh/firecrawl",
+  "officialRepository": "https://github.com/firecrawl/firecrawl",
+  "sourceBaseCommit": "84ddbc1825f1932826dc65db103a3486305619d5",
+  "sourceCommit": "d11428255c1887015dd5cf127eb0d86c01a62467",
+  "pairedSourceCommits": {
+    "sdk": "d11428255c1887015dd5cf127eb0d86c01a62467",
+    "native": "1074258c0245336d7634fca833ac4c7df9f33a7d"
+  },
+  "sourceFiles": {
+    "src/index.backup.ts": "78557c4843a62be35fddc577f106c7006b39756c1b7a1cb5b205ebd9c2768e81",
+    "src/index.ts": "9f47ce0cea834a9d363167c6de6ee6036d1d4a2e8719995c16c2586e9ea5976d",
+    "src/types/node-undici.d.ts": "afa3cb59b1ca5602b76401d09acf8421364dd883e658779e1675ad4aaa3883cf",
+    "src/utils/zodSchemaToJson.ts": "eea5554223e41ab7d6319e96d31d43e95f68e01e332423adf1c3f67e462d78e1",
+    "src/v1/index.ts": "05773f0cefe17f1c19137167a26c90e0ac57e30626480cf025335a6216f00000",
+    "src/v2/client.ts": "e8431a21bb8919c2b94ac89f6dd6fac4696d9eb411512d72931af3a1a89a53cb",
+    "src/v2/methods/agent.ts": "6f97a6ca5afc6697aa1fb40dc051fa18dc92e4d9e8ec13a5b6bc09fafb9a75fc",
+    "src/v2/methods/batch.ts": "be2cfdb5ddab32c4c55dcdda8d69dc26dab0e1c939fbc79cdf72197a888927de",
+    "src/v2/methods/browser.ts": "4f0bd31aaadc3690f393d5b9a279dcc182cc4dc3317d02e7840ba5e2c9aa96b1",
+    "src/v2/methods/crawl.ts": "27e06f80f24d16523dd669c17eb0f8cf9ff7174c5e695fd2505e6105abfb3c01",
+    "src/v2/methods/extract.ts": "d39bb59753d8c207ce9f7e61f5bd27cfabbb7dc3525376f26dc22a3a6b5b5236",
+    "src/v2/methods/map.ts": "acd81f534c5d98a8ff116df5649bd120ad4ffc28c9ebe5b99335580b9666c7a9",
+    "src/v2/methods/monitor.ts": "be25a78af4403816b967bdc02816a5ddd9ef25b45b1cd6b7ae5b151fa02496d5",
+    "src/v2/methods/parse.ts": "0da3e5f0a58313b28d639df5a75d1e835a3f7ad48fd1e9f066530d9cb40c821b",
+    "src/v2/methods/scrape.ts": "2679c1ea23700deff5c75411608439dbcc799ff42b4e2758df1502a3201816a2",
+    "src/v2/methods/search.ts": "722ab7f49396e0d2f99a04989129f9f8142a4cf1cdd95130fa21487fa54ee093",
+    "src/v2/methods/usage.ts": "86576a884f60c7459a32db1ec1d9ebee3878fa24c081a4a1873772c866e17ab6",
+    "src/v2/types.ts": "66f4b7ac6f30f5f2a9711987ee7dd5d76f9c873856ea755470e24a00d6fd9334",
+    "src/v2/utils/errorHandler.ts": "81e27bc31206e5783945810f4ffad46980a01e5c59af7b7b14b9947fa56d25ae",
+    "src/v2/utils/getVersion.ts": "062ee36b7f7e6ed19f73c3fe8ee31f4d40b0167885c6482b37b96c4f35d8d7d8",
+    "src/v2/utils/httpClient.ts": "25cdb188db19fc35ec33883525d127ac1368fa2df4a8a65dd1fdb6c9c383ae43",
+    "src/v2/utils/pagination.ts": "dc42ece49d65ddee73667ed26ecf3774bfae085c8448d4bfbac24c4a189aec47",
+    "src/v2/utils/validation.ts": "acbfacfa9bb12a5a1941959054208053f3a2f5c93ece6d2a588b1834c02dc4f6",
+    "src/v2/watcher.ts": "12834c7f10bf4885952d848fdf76a3ee03d84ae6ef6553214a04c79c45e5e5c7",
+    "src/__tests__/e2e/v1/index.test.ts": "ae6ab0093e894eda0c6f8906c4e8a515a2db3428a6f18b389a8d98ba16b39248",
+    "src/__tests__/e2e/v2/batch.test.ts": "a774d0b3d4ba8a719e27c5f0c8b1745b9d1b2b38d27d011c7622635b03ca9d86",
+    "src/__tests__/e2e/v2/crawl.test.ts": "cf0b13bb06908dab364073d06c92b33347c95ebef1d9530d96dcfe4a7be20cb9",
+    "src/__tests__/e2e/v2/extract.test.ts": "18d24ae5fc7bc7922a2b8c32212d66cdecfa07e0058f89688a8c7cc89c6fb53a",
+    "src/__tests__/e2e/v2/map.test.ts": "7914e6b1a4e891af8f53a64456741b436e6d566891243aac605c11eb92eb33e7",
+    "src/__tests__/e2e/v2/parse.test.ts": "a75daaebef1692ad7f0cea4d9628d7fb64793f4143bf41845137861d2ab01089",
+    "src/__tests__/e2e/v2/scrape.test.ts": "cd314107bc6844b9e3216e0f40434b8a48de012a0d74ccc18b252e25bee599c3",
+    "src/__tests__/e2e/v2/search.test.ts": "1528212df250597f1a05bd480300706f330404cbb0ed0d3cad22cc1cd0e156a8",
+    "src/__tests__/e2e/v2/usage.test.ts": "48086c968a4e9934216cbc62268863cbdc49a85b5a2437c3a7a108ec09c939d6",
+    "src/__tests__/e2e/v2/utils/idmux.ts": "9579993cd7d0b92055ac7e8101ca3c2b76de134985b8db72c0f52ab01e2d908d",
+    "src/__tests__/e2e/v2/watcher.test.ts": "f4e6691c75b29cc90fe34c376fc607ef978da5bf75fec6e215f7d95fa318bc52",
+    "src/__tests__/unit/v1/monitor-job-status-retry.test.ts": "de14b46922a1788f67d34412006ba665476dc281fde122266b453ca2b5c0cfb7",
+    "src/__tests__/unit/v2/agent.test.ts": "feea143496d8660bbd22085b6d4471ee9e5c7fca8544c1e34f71f5e045f16390",
+    "src/__tests__/unit/v2/branding.test.ts": "e28f77a9950d9db447345dbb3d67b668172f55d5d637a9883c7a7a6aa8ea7930",
+    "src/__tests__/unit/v2/browser-transport.test.ts": "d06cabd765c684966a04fcc6a1e53f3289ade9947490b8f347a29ed2b414e786",
+    "src/__tests__/unit/v2/clientOptions.test.ts": "dceeabd3e0c78e1f2c2616d0de67fc2d8ec8108a25b7d7abe376a19be9214f1a",
+    "src/__tests__/unit/v2/errorHandler.test.ts": "4990046b0e115e0975469e8574c743e2c8a0aa7732a6c51e2ee5e6ef974ae8a5",
+    "src/__tests__/unit/v2/pagination.test.ts": "a2f849bd0a1f83678e519808c145a3be54b19b4ad91103d3bd1964fa18e75260",
+    "src/__tests__/unit/v2/parse.unit.test.ts": "8ced43ee729cca07837917be4982063d040690f8810984a224eb9984d1c26fdf",
+    "src/__tests__/unit/v2/prototype-discoverability.test.ts": "b3f317bfd46b01b43791f006431818041f2bab4a1d8bbea378f4f450f46463f2",
+    "src/__tests__/unit/v2/scrape-browser.unit.test.ts": "92697c1fe2494fcd6b3dcd314a5de1ea10e7e68469d4f7dcb904740aa74a658e",
+    "src/__tests__/unit/v2/scrape.unit.test.ts": "724c6e83a57e92bbe3e290bf0298a19db09a674aada604956354b0147c688a56",
+    "src/__tests__/unit/v2/search-data-property.test.ts": "f5e9c341d059bd85e45a499308dea191981d6d2557865a3d10d6429eb2f8ecc2",
+    "src/__tests__/unit/v2/v1-aliases.test.ts": "9ae67afebfcb0a54db541b7d4c8575d5d99acf38c08ffc5641a98488143ea3b9",
+    "src/__tests__/unit/v2/validation.test.ts": "4a9651919b6fd3b13f628e2796ff8320d99afd6b10bad5b5a37a658d2a6514d0",
+    "src/__tests__/unit/v2/zodSchemaToJson.test.ts": "740f4cdd063c0e43595f079984bb518641e13777fd6270360a6fe26a365ed3f6"
+  },
+  "runtimeManifestSha256": "3cec5b6cfe6babd531cc2a74d80f249fa5059d0b4ae20780b6965f6962002fc0",
+  "manifestChanges": {
+    "name": {
+      "canonicalSource": "@mendable/firecrawl-js",
+      "runtimeArchive": "firecrawl"
+    },
+    "dependencies": {
+      "canonicalSource": {
+        "axios": "1.15.2",
+        "firecrawl": "4.16.0",
+        "typescript-event-target": "^1.1.1",
+        "zod": "^3.23.8",
+        "zod-to-json-schema": "^3.23.0"
+      },
+      "runtimeArchive": {
+        "axios": "1.15.2",
+        "typescript-event-target": "^1.1.1",
+        "zod": "^3.23.8",
+        "zod-to-json-schema": "^3.23.0"
+      }
+    },
+    "pnpm": {
+      "canonicalSource": {
+        "overrides": {
+          "@isaacs/brace-expansion@<=5.0.0": ">=5.0.1",
+          "minimatch@<10.2.3": ">=10.2.3",
+          "rollup@<4.59.0": ">=4.59.0",
+          "picomatch@<4.0.4": ">=4.0.4",
+          "handlebars": ">=4.7.9",
+          "brace-expansion": ">=5.0.6",
+          "axios@<1.15.2": "1.15.2",
+          "follow-redirects@<1.16.0": ">=1.16.0 <2.0.0"
+        }
+      },
+      "runtimeArchive": null
+    },
+    "files": {
+      "canonicalSource": null,
+      "runtimeArchive": [
+        "dist"
+      ]
+    }
+  },
+  "distFiles": {
+    "chunk-7KWNHI4H.js": "86a6a4181474b4bb0d016c549f612362cca88f4eb211ecae954af2a2c001384e",
+    "index.cjs": "3a9d6261695846bfb6497ff18645fc9fe687b37a1ac9a55d2d4f6316a09b5323",
+    "index.d.cts": "3e5063317bff2374503aad24fd22b264182389b95d6eaed7fff0783a6a50146c",
+    "index.d.ts": "3e5063317bff2374503aad24fd22b264182389b95d6eaed7fff0783a6a50146c",
+    "index.js": "54a668a840670b09f2428df678736962c409fd07809de38ed164b23d7823ed7b",
+    "package-KBCQFPRT.js": "db74dad9c4a75b36e377e950694969f375aa57c322453876540c27e335c41d9c"
+  },
+  "artifact": {
+    "filename": "firecrawl-4.25.1-transport-rootgraph-v9.tgz",
+    "sha256": "2984c7841ae7b16268d1aeef32b73efd68cd83532b646bac56cb9b1499d0207c",
+    "integrity": "sha512-qzMwJfsbRzaoM+B7tVtVXHKgONY0ivdDL1tHRAFKz+zuWymq3eOHaKGfqhhzAwJo+a0niJUmmazQwybFWjjiAQ=="
+  },
+  "normalPackFilename": "firecrawl-4.25.1.tgz",
+  "toolchain": {
+    "node": "v24.21.0",
+    "pnpm": "10.11.0",
+    "pnpmCliSha256": "b276da51dc8ca5b0d3ee3371695b50fc8b3244b281b091c63a3f082a88dadeb9",
+    "build": "The unchanged official SDK tsup8.5.0 configuration and canonical pnpm10.11.0 development lock produced the qualified six dist/DTS files under Node24.21.0. V3 records stock/patched builds and81 adapted patched Jest tests. Use the canonical SDK package build, without changing production ranges to development-lock versions. This recipe deliberately accepts already-built dist and verifies every byte; it does not replace the build with a custom bundler."
+  },
+  "priorReceipts": {
+    "sdkOriginalBuildQualification": "8766043088737c8726df7add097f756a4fdc0d6cab56e2761e0e32171e89a4b8",
+    "privateSuccessorV9": "008f64ede2ea30a08541719044d30cb4764714c73b8fa78221c893871d486162",
+    "independentSuccessorReviewRelayedByRoot": "1fc340dd56264c1963d8cd91a6d4cd56120155a50b7089949a61c728d8777aee"
+  },
+  "distribution": {
+    "sourcePrUrl": null,
+    "publishedAssetUrl": null,
+    "selectedReleaseTag": null,
+    "status": "PRIVATE_SOURCE_AND_ARTIFACT_REVIEW_ONLY",
+    "policy": "pnpm11.3 may reject the same HTTPS URL when traversed as an overridden child before deduplication. A direct declaration is not a blanket exception. No HTTPS distribution approval or blockExoticSubdeps relaxation is implied."
+  },
+  "productAdmission": "Not product KV-BR-002 admission, full Root graph equivalence, provider/financial acceptance or deployment. Existing Core/AgentBrowser/driver archives unchanged.",
+  "sourceTextHashConvention": "Canonical LF text, matching Git source blobs and the qualified build. Working checkout CRLF is normalized only for text-source/runtime-manifest hashing; dist and archive bytes are always checked exactly."
+}
